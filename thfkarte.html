@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vogelbeobachtung</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="thfkarte.js" defer type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Alles, was fliegt!</h1>
+        <img id="fernglas" src="/images/fernglasicon.png">
+        <p>Hilf uns einen Überblick über die Vögel des Feldes zu bekommen </br>und trage alle Vögel ein, die du bei deinem Besuch entdecken kannst. </p>
+
+    </header>
+    <!-- CHOSE BIRDS -->
+    <main>
+
+        <div id="chooser"></div>
+        <div id="map"> </div>
+        <div>
+
+            <p> Lege deinen Standort fest </br>und wähle die Vögel aus, </br>die du dort gesehen hast.</p>
+            <input id="btnaddbirds" type="button" value="Meinen Standort festlegen">
+            <ul id="auswahl">
+                <li><img src="images/amsel.svg"><input class="count"> </li>
+                <li><img src="images/bachstelze.svg"><input class="count"></li>
+                <li><img src="images/feldlerche.svg"><input class="count"></li>
+                <li><img src="images/feldsperling.svg"><input class="count"></li>
+                <li><button class="save">Speichern</button></li>
+            </ul>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
