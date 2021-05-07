@@ -1,0 +1,97 @@
+body {}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(134, 189, 226);
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    margin: 5vh;
+}
+
+header {
+    background-image: url("images/hintergrund.jpg");
+    background-size: cover;
+    height: 80vh;
+    margin: -1vw;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 10vh;
+    color: white;
+    padding: 10vh;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    padding: 3vw;
+}
+
+input {
+    border-color: white;
+    border: 2px solid;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 3vh;
+    border-radius: 4px;
+    padding: 10px, 15px;
+    margin: 12px;
+    z-index: 1000;
+}
+
+.count {
+    float: right;
+}
+
+.save {
+    border-color: white;
+    border: 2px solid;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 3vh;
+    border-radius: 4px;
+    padding: 10px, 15px;
+    margin: 12px;
+    z-index: 1000;
+}
+
+#birdelements {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
+#fernglas {
+    width: 10vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+li {
+    width: 10vw;
+    margin: 0vh;
+    padding: 0vh;
+}
+
+.count {
+    width: 3vw;
+}
